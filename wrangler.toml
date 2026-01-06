@@ -1,5 +1,5 @@
 name = "lida-chhen"
-main = "./index.js"
+main = "./index.html"
 compatibility_date = "2024-01-01"
 
 [site]
