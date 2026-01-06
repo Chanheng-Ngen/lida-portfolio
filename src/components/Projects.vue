@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
 
       <div class="mb-12">
-        <h2 class="text-3xl font-bold text-slate-100 dark:text-white mb-4">Featured Projects</h2>
+        <h2 class="text-2xl font-bold text-slate-100 dark:text-white mb-4">Featured Projects</h2>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

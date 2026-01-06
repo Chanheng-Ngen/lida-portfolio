@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
       
       <div class="mb-16 text-center max-w-2xl mx-auto">
-        <h2 class="text-3xl font-bold text-slate-100 dark:text-white mb-4">Technical Proficiency</h2>
+        <h2 class="text-2xl font-bold text-slate-100 dark:text-white mb-4">Technical Proficiency</h2>
         <p class="text-lg text-slate-400 dark:text-slate-400">
           A comprehensive toolkit of modern technologies and methodologies I use to build scalable solutions.
         </p>

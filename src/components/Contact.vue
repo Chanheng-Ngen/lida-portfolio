@@ -14,7 +14,7 @@
         <!-- Left Side: Header & Socials -->
         <div class="space-y-8">
           <div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">
               <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-sky-300">Let's Connect</span>
             </h2>
             <p class="text-slate-400 text-lg leading-relaxed max-w-md">
