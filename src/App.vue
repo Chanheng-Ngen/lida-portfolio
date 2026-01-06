@@ -1,12 +1,3 @@
-<script setup>
-import Navbar from './components/Navbar.vue'
-import Hero from './components/Hero.vue'
-import TechStack from './components/TechStack.vue'
-import Projects from './components/Projects.vue'
-import Experience from './components/Experience.vue'
-import Contact from './components/Contact.vue'
-</script>
-
 <template>
   <div class="bg-slate-900 min-h-screen text-slate-200 selection:bg-emerald-500/30 selection:text-emerald-200 transition-colors duration-500">
      <!-- Grid Background Pattern (FROM ANTIGRAVITY) -->
@@ -32,7 +23,14 @@ import Contact from './components/Contact.vue'
     </div>
   </div>
 </template>
-
+<script setup>
+import Navbar from './components/Navbar.vue'
+import Hero from './components/Hero.vue'
+import TechStack from './components/TechStack.vue'
+import Projects from './components/Projects.vue'
+import Experience from './components/Experience.vue'
+import Contact from './components/Contact.vue'
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 

@@ -1,36 +1,3 @@
-<script setup>
-
-const contactInfo = [
-  { icon: 'phone', value: '+855 93 688 612' },
-  { icon: 'email', value: 'chhenlida08@gmail.com', link: 'mailto:chhenlida08@gmail.com' },
-  { icon: 'location', value: '271 Street, Sangkat Boeng Tumpunl, Mean Chey district, Phnom Penh City' }
-]
-
-const education = {
-  year: '2021 - Now',
-  school: 'Institut de Technologie du Cambodge',
-  degree: 'Bachelor of information technology and communication'
-}
-
-const languages = [
-  { name: 'Khmer', level: '(Native language)', stars: 0 }, 
-  { name: 'English', level: '', stars: 4 },
-  { name: 'French', level: '', stars: 3 } 
-]
-
-const technologies = [
-  'Svelte', 'Vue.js', 'Laravel', 'Mysql', 'DrawDB', 'MongoDB', 'Nestjs'
-]
-
-const experienceRef = {
-  name: 'Mr. HOK Tin',
-  title: 'Professor at Institute of Technology of Cambodia',
-  phone: '+855 866 670 74',
-  email: 'hok.tin@itc.edu.kh'
-}
-
-</script>
-
 <template>
   <div class="px-8 py-10 flex flex-col gap-10 text-sm font-light tracking-wide">
     <!-- Profile Image -->
@@ -100,3 +67,35 @@ const experienceRef = {
 
   </div>
 </template>
+<script setup>
+
+const contactInfo = [
+  { icon: 'phone', value: '+855 93 688 612' },
+  { icon: 'email', value: 'chhenlida08@gmail.com', link: 'mailto:chhenlida08@gmail.com' },
+  { icon: 'location', value: '271 Street, Sangkat Boeng Tumpunl, Mean Chey district, Phnom Penh City' }
+]
+
+const education = {
+  year: '2021 - Now',
+  school: 'Institut de Technologie du Cambodge',
+  degree: 'Bachelor of information technology and communication'
+}
+
+const languages = [
+  { name: 'Khmer', level: '(Native language)', stars: 0 }, 
+  { name: 'English', level: '', stars: 4 },
+  { name: 'French', level: '', stars: 3 } 
+]
+
+const technologies = [
+  'Svelte', 'Vue.js', 'Laravel', 'Mysql', 'DrawDB', 'MongoDB', 'Nestjs'
+]
+
+const experienceRef = {
+  name: 'Mr. HOK Tin',
+  title: 'Professor at Institute of Technology of Cambodia',
+  phone: '+855 866 670 74',
+  email: 'hok.tin@itc.edu.kh'
+}
+
+</script>

@@ -1,17 +1,8 @@
-<script setup>
-</script>
 
 <template>
   <div class="flex flex-col h-full">
     <!-- Blue Header Section for Name -->
     <div class="bg-[#0B2447] text-white pt-20 pb-10 px-0 md:-ml-0"> 
-       <!-- Note: The parent container has padding, but we want this header to extend full width. 
-            However, our layout in App.vue puts this component in a clean flex box. 
-            To match the design where the Sidebar matches this header's color, 
-            we can actually just style this top part blue. 
-            Wait, App.vue grid puts Sidebar (Blue) next to Main (White).
-            So we need this top part of Main to be Blue.
-       -->
        <div class="flex flex-col justify-end h-32 uppercase ps-4">
          <h1 class="text-5xl font-extrabold tracking-wider leading-tight">CHHEN LIDA</h1>
          <h2 class="text-xl font-light tracking-widest mt-2 opacity-90">FULL STACK DEVELOPER</h2>
@@ -38,9 +29,6 @@
         </div>
         
         <div class="ml-2 border-l-2 border-gray-800 pl-6 flex flex-col gap-6 relative">
-          <!-- Timeline dot -->
-          <!-- We can add absolute dots if we want strict timeline look, but simple border-l is good foundation -->
-          
           <!-- Project Experience -->
           <div class="relative">
             <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gray-800"></div>

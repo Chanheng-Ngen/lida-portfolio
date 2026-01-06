@@ -1,43 +1,3 @@
-<script setup>
-import { ref, onMounted } from 'vue';
-import { ArrowRight, ArrowUpDown, Download } from 'lucide-vue-next';
-
-const roles = ["Full Stack Developer", "UI/UX Designer", "Data Analyst"];
-const currentRole = ref("");
-const roleIndex = ref(0);
-const charIndex = ref(0);
-const isDeleting = ref(false);
-const typingSpeed = ref(100);
-
-const typeEffect = () => {
-  const currentFullRole = roles[roleIndex.value];
-  
-  if (isDeleting.value) {
-    currentRole.value = currentFullRole.substring(0, charIndex.value - 1);
-    charIndex.value--;
-    typingSpeed.value = 50;
-  } else {
-    currentRole.value = currentFullRole.substring(0, charIndex.value + 1);
-    charIndex.value++;
-    typingSpeed.value = 100;
-  }
-
-  if (!isDeleting.value && charIndex.value === currentFullRole.length) {
-    isDeleting.value = true;
-    typingSpeed.value = 2000; 
-  } else if (isDeleting.value && charIndex.value === 0) {
-    isDeleting.value = false;
-    roleIndex.value = (roleIndex.value + 1) % roles.length;
-    typingSpeed.value = 500; 
-  }
-
-  setTimeout(typeEffect, typingSpeed.value);
-};
-
-onMounted(() => {
-  typeEffect();
-});
-</script>
 
 <template>
   <section id="hero" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
@@ -119,7 +79,46 @@ onMounted(() => {
     </div>
   </section>
 </template>
+<script setup>
+import { ref, onMounted } from 'vue';
+import { ArrowRight, ArrowUpDown, Download } from 'lucide-vue-next';
 
+const roles = ["Full Stack Developer", "UI/UX Designer", "Data Analyst"];
+const currentRole = ref("");
+const roleIndex = ref(0);
+const charIndex = ref(0);
+const isDeleting = ref(false);
+const typingSpeed = ref(100);
+
+const typeEffect = () => {
+  const currentFullRole = roles[roleIndex.value];
+  
+  if (isDeleting.value) {
+    currentRole.value = currentFullRole.substring(0, charIndex.value - 1);
+    charIndex.value--;
+    typingSpeed.value = 50;
+  } else {
+    currentRole.value = currentFullRole.substring(0, charIndex.value + 1);
+    charIndex.value++;
+    typingSpeed.value = 100;
+  }
+
+  if (!isDeleting.value && charIndex.value === currentFullRole.length) {
+    isDeleting.value = true;
+    typingSpeed.value = 2000; 
+  } else if (isDeleting.value && charIndex.value === 0) {
+    isDeleting.value = false;
+    roleIndex.value = (roleIndex.value + 1) % roles.length;
+    typingSpeed.value = 500; 
+  }
+
+  setTimeout(typeEffect, typingSpeed.value);
+};
+
+onMounted(() => {
+  typeEffect();
+});
+</script>
 <style scoped>
 @keyframes blink {
   0%, 100% { opacity: 1; }
