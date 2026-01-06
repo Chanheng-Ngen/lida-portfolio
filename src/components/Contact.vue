@@ -1,24 +1,3 @@
-<script setup>
-import { ref } from 'vue';
-import { Linkedin, Github, Twitter, Mail, Send, Loader2 } from 'lucide-vue-next';
-
-const isSubmitting = ref(false);
-const form = ref({
-  name: '',
-  email: '',
-  message: ''
-});
-
-const handleSubmit = async () => {
-  isSubmitting.value = true;
-  // Simulate network request
-  await new Promise(resolve => setTimeout(resolve, 2000));
-  isSubmitting.value = false;
-  form.value = { name: '', email: '', message: '' };
-  alert('Message sent successfully! (Demo)');
-};
-</script>
-
 <template>
   <section id="contact" class="py-12 bg-[#0f172a] text-white relative overflow-hidden border-t border-slate-800">
     <div
@@ -63,7 +42,7 @@ const handleSubmit = async () => {
               </svg>
               <span class="font-medium text-slate-300 group-hover:text-white">Telegram</span>
             </a>
-            <a href="mailto:chhenlida08@gmail.com"
+            <a href="mailto:chhenlida04@gmail.com"
               class="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 hover:border-sky-500 hover:bg-slate-800 transition-all group">
               <Mail class="w-5 h-5 text-slate-400 group-hover:text-white" />
               <span class="font-medium text-slate-300 group-hover:text-white">Email</span>
@@ -110,3 +89,41 @@ const handleSubmit = async () => {
     </footer>
   </section>
 </template>
+<script setup>
+import { ref } from 'vue';
+import { Linkedin, Github, Twitter, Mail, Send, Loader2 } from 'lucide-vue-next';
+import emailjs from '@emailjs/browser';
+
+const isSubmitting = ref(false);
+const form = ref({
+  name: '',
+  email: '',
+  message: ''
+});
+
+const handleSubmit = async () => {
+  isSubmitting.value = true;
+  try {
+    const result = await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,     
+      {
+        from_name: form.value.name,
+        from_email: form.value.email,
+        message: form.value.message,
+        to_email: import.meta.env.VITE_EMAILJS_TO_EMAIL
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY       
+    );
+    
+    console.log('SUCCESS!', result.text);
+    alert('Message sent successfully!');
+    form.value = { name: '', email: '', message: '' };
+  } catch (error) {
+    console.error('FAILED...', error);
+    alert('Failed to send message. Please try again.');
+  } finally {
+    isSubmitting.value = false;
+  }
+};
+</script>
