@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <section id="experience" class="py-20 bg-slate-900 dark:bg-black/20 border-t border-slate-800 dark:border-slate-800">
     <div class="container mx-auto px-6">
@@ -68,8 +65,8 @@
 
         </div>
         </div>
-        <div class="flex justify-around items-center border-t border-slate-800 dark:border-slate-800 mt-12 pt-16">
-             <h2 class="text-2xl font-bold text-slate-300 dark:text-white">Volunteering</h2>
+        <div class="grid grid-cols-2 items-center border-t border-slate-800 dark:border-slate-800 mt-12 pt-16">
+             <h2 class="text-xl md:text-2xl  font-bold text-slate-300 dark:text-white">Volunteering</h2>
               <div class="space-y-8">
                  <div class="group">
                    <h4 class="font-bold text-slate-300 dark:text-white">Book Fair Organizer</h4>
