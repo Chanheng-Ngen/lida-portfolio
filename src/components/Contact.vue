@@ -24,17 +24,17 @@
 
           <!-- Social Buttons -->
           <div class="flex flex-wrap gap-4">
-            <a href="#"
+            <a href="https://www.linkedin.com/in/chhen-lida-itc2004"
               class="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 hover:border-sky-500 hover:bg-slate-800 transition-all group">
               <Linkedin class="w-5 h-5 text-slate-400 group-hover:text-white" />
               <span class="font-medium text-slate-300 group-hover:text-white">LinkedIn</span>
             </a>
-            <a href="#"
+            <a href="https://github.com/chhenlida"
               class="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 hover:border-sky-500 hover:bg-slate-800 transition-all group">
               <Github class="w-5 h-5 text-slate-400 group-hover:text-white" />
               <span class="font-medium text-slate-300 group-hover:text-white">GitHub</span>
             </a>
-            <a href="https://t.me/yourusername"
+            <a href="https://t.me/Ismeelyn"
               class="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 hover:border-sky-500 hover:bg-slate-800 transition-all group">
               <svg class="w-5 h-5 text-slate-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path
