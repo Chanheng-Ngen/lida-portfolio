@@ -16,10 +16,11 @@
           <!-- Image Header -->
           <div class="relative h-36 overflow-hidden">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmH79Xg2-Ki0mH8L3d8cXIuGLwWKzH3hu73A&s"
-              alt="Project"
-              class="w-full h-full object-cover opacity-50"
+              :src="project.image"
+              :alt="project.title"
+              class="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-all duration-300"
             />
+
             <div
               class="absolute top-4 right-4 flex gap-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
             >
@@ -121,20 +122,13 @@ const currentPage = ref(1);
 const itemsPerPage = 6;
 const projects = [
   {
-    title: "Music Player App",
-    description:
-      "A responsive music player web application delivering a seamless audio experience across devices.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    type: "Frontend",
-  },
-
-  {
     title: "E-commerce Platform",
     description:
-      "Full-stack e-commerce solution with Laravel backend and Svelte frontend, handling product management and orders.",
+      "A full-stack web platform for comparing technologies and products, built with a Laravel backend and Svelte frontend. It supports product management, detailed comparisons, and user-friendly browsing.",
     tech: ["Laravel", "Svelte", "MySQL"],
     type: "Full Stack",
-    github: "https://github.com/NaySovannarith/Tech-Compare", 
+    image: '/projects/Tech.png',
+    github: "https://github.com/NaySovannarith/Tech-Compare",
     live: "https://tech-compare-dun.vercel.app",
   },
 
@@ -144,66 +138,46 @@ const projects = [
       "Online platform for quiz management using NestJS for backend, Svelte for frontend, and GraphQL for API.",
     tech: ["Svelte", "NestJS", "GraphQL"],
     type: "Full Stack",
-      github: {
-      frontend: 'https://github.com/chhenlida/Kquiz',
-      backend: 'https://github.com/chhenlida/Quiz-Backend'
-    },
+    image: '/projects/Quiz.jpg',
+    github: "https://github.com/chhenlida/Kquiz",
   },
   {
-    title: "LED Scrolling Text",
+    title: "Book Tracking System",
     description:
-      "Desktop application simulating LED text animation using Object-Oriented Programming (OOP) principles.",
-    tech: ["Java", "OOP", "VS Code"],
-    type: "Desktop App",
-  },
-  {
-    title: "E-commerce Frontend",
-    description:
-      "Designed modern user interface for an e-commerce platform using Vue.js.",
-    tech: ["Vue.js", "UI Design"],
-    type: "Frontend",
-  },
-  {
-    title: "E-commerce Frontend",
-    description:
-      "Designed modern user interface for an e-commerce platform using Vue.js.",
-    tech: ["Vue.js", "UI Design"],
-    type: "Frontend",
+      "A full-stack web application built with Svelte and Laravel, featuring a RESTful API to manage books, users, and borrowing records with a clean, modern user interface.",
+    tech: ["Svelte", "NestJS", "PostgreSQL"],
+    type: "Full Stack",
+    image: '/projects/Book.png',
+    github: "https://github.com/PhearakreachPR/BOOK_TRACKING_SYSTEM_FRONTEND",
   },
   {
     title: "E-commerce Platform",
     description:
-      "Full-stack e-commerce solution with Laravel backend and Svelte frontend, handling product management and orders.",
-    tech: ["Laravel", "Svelte", "MySQL"],
-    type: "Full Stack",
-  },
-  {
-    title: "Quiz Management System",
-    description:
-      "Online platform for quiz management using NestJS for backend, Svelte for frontend, and GraphQL for API.",
-    tech: ["Svelte", "NestJS", "GraphQL"],
-    type: "Full Stack",
-  },
-  {
-    title: "LED Scrolling Text",
-    description:
-      "Desktop application simulating LED text animation using Object-Oriented Programming (OOP) principles.",
-    tech: ["Java", "OOP", "VS Code"],
-    type: "Desktop App",
-  },
-  {
-    title: "E-commerce Frontend",
-    description:
-      "Designed modern user interface for an e-commerce platform using Vue.js.",
+      "E-commerce, short for electronic commerce, involves the online sale of computers and related services.",
     tech: ["Vue.js", "UI Design"],
     type: "Frontend",
+    image: '/projects/Computer.png',
+    github: "https://github.com/Panhariddh/E-Commerce",
   },
-  {
-    title: "E-commerce Frontend",
+
+   {
+    title: "Music Player App",
     description:
-      "Designed modern user interface for an e-commerce platform using Vue.js.",
-    tech: ["Vue.js", "UI Design"],
+      "A responsive music player web application delivering a seamless audio experience across devices.",
+    tech: ["HTML", "CSS", "JavaScript"],
     type: "Frontend",
+    image: '/projects/Artist.png',
+    github: "https://github.com/ChhayMonyneath123/Project123",
+  },
+ 
+  {
+    title: "Pet Care Mobile App",
+    description:
+      "A mobile application with a modern and user-friendly interface for pet care services, developed using Flutter.",
+    tech: ["Dart", "Flutter"],
+    type: "Frontend",
+    image: '/projects/PetCare.png',
+    github: "https://github.com/NaySovannarith/PET-CARE",
   },
 ];
 
