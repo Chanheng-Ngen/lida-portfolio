@@ -44,7 +44,7 @@
             <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </span>
         </a>
-        <a href="https://docs.google.com/document/d/13HNFPamLG5BthNA91SuP8x4D2mEmvhzvBMOv_LP_3MI/edit?tab=t.0" class="group relative px-8 py-3 border-2 border-slate-600 dark:border-slate-400 text-slate-700 dark:text-slate-300 rounded-full font-medium overflow-hidden transition-all duration-300 hover:text-white dark:hover:text-slate-900 hover:scale-105 active:scale-95">
+        <a href="https://docs.google.com/document/d/13HNFPamLG5BthNA91SuP8x4D2mEmvhzvBMOv_LP_3MI/edit?usp=sharing" class="group relative px-8 py-3 border-2 border-slate-600 dark:border-slate-400 text-slate-700 dark:text-slate-300 rounded-full font-medium overflow-hidden transition-all duration-300 hover:text-white dark:hover:text-slate-900 hover:scale-105 active:scale-95">
           <div class="absolute inset-0 bg-slate-700 dark:bg-slate-300 -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
           <span class="relative flex items-center gap-2">Download CV
           <Download class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
