@@ -81,7 +81,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="grid grid-cols-2 items-center border-t border-slate-800 dark:border-slate-800 mt-12 pt-16">
