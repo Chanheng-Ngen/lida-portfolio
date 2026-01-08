@@ -74,7 +74,7 @@
       </div>
 
       <!-- Pagination -->
-      <div class="flex justify-end items-center gap-2 mt-12">
+      <div v-if="projects.length > 6" class="flex justify-end items-center gap-2 mt-12">
         <button
           @click="prevPage"
           :disabled="currentPage === 1"
