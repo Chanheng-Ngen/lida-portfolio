@@ -80,6 +80,9 @@
                    <h4 class="font-bold text-slate-300 dark:text-white">Volunteer</h4>
                    <p class="text-sm text-slate-500">RYL 12 Event</p>
                  </div>
+                 <a href="https://docs.google.com/document/d/1vlSeoHY3WiddVAe7GfVTxWwq-N7B4vQKQEDyRrLCJOc/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded hover:bg-blue-800 transition-colors">
+                  See Certificates →
+                </a>
               </div>
       </div>
     </div>
